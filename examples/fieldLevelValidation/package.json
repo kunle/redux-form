@@ -6,7 +6,8 @@
     "build": "npm run clean && npm run build:webpack",
     "lint": "eslint src",
     "start": "node devServer.js",
-    "prepublish": "npm run lint && npm run build"
+    "prepublish": "npm run snyk-protect; npm run lint && npm run build",
+    "snyk-protect": "snyk protect"
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
@@ -19,7 +20,8 @@
     "react-redux": "^5.0.3",
     "redux": "^3.6.0",
     "redux-form": "file:../../",
-    "redux-form-website-template": "0.0.41"
+    "redux-form-website-template": "0.0.41",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
@@ -41,5 +43,6 @@
     "webpack": "^2.3.1",
     "webpack-dev-middleware": "^1.10.1",
     "webpack-hot-middleware": "^2.17.1"
-  }
+  },
+  "snyk": true
 }
