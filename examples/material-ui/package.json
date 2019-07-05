@@ -12,7 +12,7 @@
     "babel-polyfill": "^6.16.0",
     "html-loader": "^0.4.4",
     "json-loader": "0.5.4",
-    "markdown-loader": "^2.0.0",
+    "markdown-loader": "^3.0.0",
     "material-ui": "^0.17.1",
     "raw-loader": "0.5.1",
     "react": "^15.4.1",
