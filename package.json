@@ -31,11 +31,12 @@
     "example:submitValidation": "form=submitValidation npm run example",
     "example:syncValidation": "form=syncValidation npm run example",
     "example:wizard": "form=wizard npm run example",
-    "prepublish": "npm run test && npm run clean && npm run build",
+    "prepublish": "npm run snyk-protect && npm run test && npm run clean && npm run build",
     "test": "mocha --compilers js:babel-register --recursive --recursive \"src/**/__tests__/*\" --require src/__tests__/setup.js",
     "test:watch": "npm test -- --watch",
     "test:cov": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text npm test",
-    "test:codecov": "cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js"
+    "test:codecov": "cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js",
+    "snyk-protect": "snyk protect"
   },
   "keywords": [
     "react",
@@ -61,7 +62,8 @@
     "is-promise": "^2.1.0",
     "lodash": "^4.17.3",
     "lodash-es": "^4.17.3",
-    "prop-types": "^15.5.6"
+    "prop-types": "^15.5.6",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -132,5 +134,6 @@
         "*.js"
       ]
     }
-  ]
+  ],
+  "snyk": true
 }
