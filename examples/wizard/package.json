@@ -15,12 +15,12 @@
     "markdown-loader": "^2.0.0",
     "prop-types": "^15.5.6",
     "raw-loader": "0.5.1",
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
     "react-redux": "^5.0.3",
     "redux": "^3.6.0",
     "redux-form": "file:../../",
-    "redux-form-website-template": "0.0.41"
+    "redux-form-website-template": "0.0.60"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",
