@@ -15,12 +15,12 @@
     "json-loader": "0.5.4",
     "markdown-loader": "^2.0.0",
     "raw-loader": "0.5.1",
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
     "react-redux": "^5.0.3",
     "redux": "^3.6.0",
     "redux-form": "file:../../",
-    "redux-form-website-template": "0.0.41",
+    "redux-form-website-template": "0.0.60",
     "redux-immutablejs": "0.0.8"
   },
   "devDependencies": {
